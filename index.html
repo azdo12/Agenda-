@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Contatos</h1>
+
+        <div class="form-section">
+            <label for="filter">Filtrar Contatos:</label>
+            <input type="text" id="filter" placeholder="Digite o nome para filtrar" oninput="filterContacts()">
+
+            <h2>Cadastrar Contato</h2>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" placeholder="Nome">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="E-mail">
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" placeholder="Telefone">
+            <button onclick="addContact()">Cadastrar</button>
+
+            <p>Total de Contatos: <span id="totalContacts">0</span></p>
+        </div>
+
+        <table id="contactTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contatos serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
